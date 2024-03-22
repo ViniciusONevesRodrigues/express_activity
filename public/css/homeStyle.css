@@ -1,0 +1,76 @@
+.contentBG h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.contentBG .task {
+    background-color: #f4a261;
+    border-radius: 10px;
+    border: solid 2px #000000;
+    margin-top: 10px;
+    padding: 5px;
+    width: 450px;
+}
+.contentBG .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentBG .taskName {
+    text-align: center;
+    font-size: 25px;
+}
+.contentBG .task img{
+    width: 20px; 
+    height: auto;
+}
+.contentBG .task .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.contentBG .options {
+    background-color: #f4a261;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    display: none;
+    padding: 15px;
+    width: 100px;
+    position: absolute;
+    top: 0; 
+    right: -90px; 
+ 
+}
+.contentBG .row {
+    margin-bottom: 10px; 
+    position: relative;
+}
+
+.contentBG .options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.contentBG .options a {
+    text-decoration: none;
+}
+
+.contentBG #content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+#btnAlterar {
+    background-color: #24b4fb;
+    border-radius: 5px;
+    color: #ffffff;
+}
+#btnDeletar {
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #ffffff;
+}

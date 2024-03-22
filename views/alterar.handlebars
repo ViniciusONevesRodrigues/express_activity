@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/taskStyle.css">
+<form action="/update" method="post">
+    <div id="container">
+        <div class="contentBG">
+            {{#each tasks}}
+            <div id="title">Atualize uma informação</div>
+            
+            <input type="text" name="id" value="{{id}}" readonly="true" hidden="true">
+
+            <div id="name">Nome</div>
+            <input type="text" name="nome" id="nameInput" value="{{nome}}">
+
+            <div id="date">Data da tarefa</div>
+            <input type="date" name="data" id="dateInput" value="{{formatDateEn data}}">
+
+            <div id="do"><input type="checkbox" name="concluida" id="concluida" checked="{{concluida}}"> Concluida</div>
+
+            <div id="content">Conteudo <textarea name="conteudo" wrap="hard">{{conteudo}}</textarea></div>
+
+            <button id="button">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                    </svg>
+                    Alterar
+                </span>
+            </button>
+            {{/each}}
+        </div>
+    </div>
+</form>
